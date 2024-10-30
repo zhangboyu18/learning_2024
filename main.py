@@ -26,7 +26,7 @@ while True:
 
     # 如果读取帧失败（例如视频结束），则退出循环
     if not ret:
-        break
+        break 
 
     # 应用背景消除器，返回一个与输入图像大小相同的二值图像（前景掩码）
     fgmask = fgbg.apply(frame)
